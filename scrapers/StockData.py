@@ -242,7 +242,8 @@ class STOCKMARKET:
                 "March 2020": re.sub(" +", " ", allCol[1].find("span").getText().replace("\n", "").replace("\r", "")),
                 "March 2021": re.sub(" +", " ", allCol[2].find("span").getText().replace("\n", "").replace("\r", "")),
                 "March 2022": re.sub(" +", " ", allCol[3].find("span").getText().replace("\n", "").replace("\r", "")),
-                "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", ""))
+                "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
+                "March 2024": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
             })
         return {
             "yearlyReturns": yearlyTableData
