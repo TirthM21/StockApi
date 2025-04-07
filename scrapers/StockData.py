@@ -243,7 +243,7 @@ class STOCKMARKET:
                 "March 2021": re.sub(" +", " ", allCol[2].find("span").getText().replace("\n", "").replace("\r", "")),
                 "March 2022": re.sub(" +", " ", allCol[3].find("span").getText().replace("\n", "").replace("\r", "")),
                 "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
-                "March 2024": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
+                "March 2024": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", ""))
             })
         return {
             "yearlyReturns": yearlyTableData
@@ -267,7 +267,9 @@ class STOCKMARKET:
                     "March 2020": re.sub(" +", " ", allCol[1].find("span").getText().replace("\n", "").replace("\r", "")),
                     "March 2021": re.sub(" +", " ", allCol[2].find("span").getText().replace("\n", "").replace("\r", "")),
                     "March 2022": re.sub(" +", " ", allCol[3].find("span").getText().replace("\n", "").replace("\r", "")),
-                    "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", ""))
+                    "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
+                    "March 2024": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", ""))
+
                 })
             if (index > 7):
                 head=allRow.find("th").getText()
@@ -278,7 +280,8 @@ class STOCKMARKET:
                     "March 2020": re.sub(" +", " ", allCol[1].find("span").getText().replace("\n", "").replace("\r", "")),
                     "March 2021": re.sub(" +", " ", allCol[2].find("span").getText().replace("\n", "").replace("\r", "")),
                     "March 2022": re.sub(" +", " ", allCol[3].find("span").getText().replace("\n", "").replace("\r", "")),
-                    "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", ""))
+                    "March 2023": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
+                    "March 2024": re.sub(" +", " ", allCol[4].find("span").getText().replace("\n", "").replace("\r", "")),
                 })
         return {
             "balanceSheet": equityLiabilities + assets
@@ -305,7 +308,8 @@ class STOCKMARKET:
                 "March 2020": re.sub(" +", " ", allCol[1].getText().replace("\n", "").replace("\r", "")),
                 "March 2021": re.sub(" +", " ", allCol[2].getText().replace("\n", "").replace("\r", "")),
                 "March 2022": re.sub(" +", " ", allCol[3].getText().replace("\n", "").replace("\r", "")),
-                "March 2023": re.sub(" +", " ", allCol[4].getText().replace("\n", "").replace("\r", ""))
+                "March 2023": re.sub(" +", " ", allCol[4].getText().replace("\n", "").replace("\r", "")),
+                "March 2024": re.sub(" +", " ", allCol[4].getText().replace("\n", "").replace("\r", "")),
             })
         return {
             "cashflows": yearlyTableData
